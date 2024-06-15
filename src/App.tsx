@@ -1,14 +1,21 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar/navbar' 
+import Hero from './components/Hero/hero'
 import './App.css'
+import { BrowserRouter,Routes,Route, Navigate } from 'react-router-dom'
+import NotFound from './components/NotFound/notfound'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <BrowserRouter>
     <Navbar />
-    <Hero />
+      <Routes >
+        <Route path='/' element={<Hero />} />
+        <Route path='/404' element={<NotFound />} />
+        <Route path='*' element={<Navigate to='/404' />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
