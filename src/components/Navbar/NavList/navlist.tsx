@@ -7,7 +7,7 @@ import { changeUserState } from '../../../app/loginSlice';
 const navlist = memo(() => {
   const user = useSelector((state:any)=>state.user.value)
   const dispatch=useDispatch();
-  const {register,isAuthenticated}:any = useKindeAuth();
+  const {register,isAuthenticated,logout}:any = useKindeAuth();
   useEffect(()=>{
     dispatch(changeUserState());
   },[isAuthenticated]);
@@ -16,7 +16,7 @@ const navlist = memo(() => {
       <Link href='#' >Home</Link>
       <Link href='#' >About</Link>
       <Link href='#' >Contact</Link>
-      {!user && <Button onClick={register}>Register</Button>}
+      <Button onClick={user?logout:register} style={{cursor:'pointer'}}>{user?"Logout":"Register"}</Button>
     </Flex>
   )
 })
