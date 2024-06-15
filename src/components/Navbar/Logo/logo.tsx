@@ -5,15 +5,15 @@ const logo = memo(() => {
   return (
     <Box maxWidth="240px">
         <Link href='/'>
-          <Flex gap="3" align="center">
+          <Flex gap={{ initial: '2', md: '3', xl: '3', }} align="center">
             <Avatar
-              size="2"
+              size={{ initial: '1', md: '2', xl: '2', }}
               src="./Component 1.svg"
               radius="large"
               fallback="SZ"
               />
             <Box>
-              <Text as="div" size="2" weight="bold">
+              <Text as="div" size={{ initial: '1', md: '2', xl: '2', }} weight="bold">
                 StreamZone
               </Text>
             </Box>

@@ -1,5 +1,6 @@
 .StreamMedia{
     width: 100%;
+    min-height: 500px;
     text-align: center;
     margin-top: 60px;
 }
@@ -9,6 +10,7 @@
 }
 .userMediaElemet{
     border-radius: 50px;
+    object-fit: cover;
 }
 
 .StreamMediaButton{
@@ -18,9 +20,21 @@
 
 .AspectMedia div{
     text-align: center;
-    margin: auto;
-    height: 481px;
     width: fit-content;
+    height: 480px;
+    margin: auto;
     border-radius: 30px;
     background-color: rgb(5,136,240);
+}
+@media screen and (max-width:600px) {
+    .userMediaElemet{
+        border-radius: 30px;
+        width: 300px;
+    }
+    .AspectMedia div{
+        height: 300px;
+    }
+    .StreamMedia{
+        min-height: 300px;
+    }
 }
