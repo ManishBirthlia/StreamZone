@@ -2,7 +2,7 @@ import { AspectRatio, Box} from '@radix-ui/themes'
 import { forwardRef, memo} from 'react'
 
 
-const streamwindow = memo(forwardRef(({ref}:any) => {
+const streamwindow = memo(forwardRef((_props,ref:any) => {
 
   return (
     <Box className='StreamMedia'>
