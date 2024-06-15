@@ -4,12 +4,12 @@ I have developed a streaming web application designed to broadcast content simul
 
 # Key Technologies Used:
 
-## Frontend: Built with Vite, React.js, and TypeScript for a fast, modern, and type-safe development environment.
-## State Management: Utilized Redux for managing application state effectively.
-## UI Components: Implemented Radix UI for accessible and customizable interface components.
-## Media Processing: Employed FFmpeg for handling video and audio processing tasks.
-## Real-Time Communication: Used Socket.io to enable real-time, bidirectional communication between the server and clients.
-## Containerization: Deployed the application using Docker to ensure consistency across different environments.
+- Frontend: Built with Vite, React.js, and TypeScript for a fast, modern, and type-safe development environment.
+- State Management: Utilized Redux for managing application state effectively.
+- UI Components: Implemented Radix UI for accessible and customizable interface components.
+- Media Processing: Employed FFmpeg for handling video and audio processing tasks.
+- Real-Time Communication: Used Socket.io to enable real-time, bidirectional communication between the server and clients.
+- Containerization: Deployed the application using Docker to ensure consistency across different environments.
 
 # React + TypeScript + Vite
 
