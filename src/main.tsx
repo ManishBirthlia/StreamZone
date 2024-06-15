@@ -15,8 +15,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <KindeProvider
           clientId={import.meta.env.VITE_Kinde_Client_Id}
           domain="https://streamzone.kinde.com"
-          redirectUri="http://localhost:5173"
-          logoutUri="http://localhost:5173"
+          redirectUri="https://streamzone-demo.netlify.app"
+          logoutUri="https://streamzone-demo.netlify.app"
         >
           <App />
         </KindeProvider>
