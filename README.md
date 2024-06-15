@@ -1,4 +1,4 @@
-# Project Summary:
+# StreamZone Project:
 
 I have developed a streaming web application designed to broadcast content simultaneously to multiple social media platforms using RTMP (Real-Time Messaging Protocol). The application leverages a robust tech stack to ensure efficient, high-quality streaming and a seamless user experience.
 
