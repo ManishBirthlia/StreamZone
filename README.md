@@ -11,7 +11,7 @@ I have developed a streaming web application designed to broadcast content simul
 - **Real-Time Communication:** Used Socket.io to enable real-time, bidirectional communication between the server and clients.
 - **Containerization:** Deployed the application using Docker to ensure consistency across different environments.
 
-# React + TypeScript + Vite
+# How To Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
