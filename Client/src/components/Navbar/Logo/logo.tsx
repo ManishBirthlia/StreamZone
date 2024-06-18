@@ -1,6 +1,6 @@
 import { Box, Avatar, Text, Flex, Link } from '@radix-ui/themes'
 import { memo } from 'react'
-import componet from './Component 1.svg';
+import componet from './Component 5.svg';
 
 const logo = memo(() => {
   return (
