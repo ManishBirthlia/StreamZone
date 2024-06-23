@@ -13,7 +13,7 @@ function App() {
       <Routes >
         <Route path='/' element={<Hero />} />
         <Route path='/404' element={<NotFound />} />
-        <Route path='*' element={<Navigate to='/404' />} />
+        <Route path='/*' element={<Navigate to='/404' />} />
       </Routes>
     </BrowserRouter>
     </>

@@ -5,7 +5,7 @@ import './index.css'
 import store from './app/store.ts'
 import { Provider } from 'react-redux'
 import '@radix-ui/themes/styles.css';
-import { Theme, ThemePanel } from '@radix-ui/themes';
+import { Theme } from '@radix-ui/themes';
 import {KindeProvider} from "@kinde-oss/kinde-auth-react";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -15,12 +15,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <KindeProvider
           clientId={import.meta.env.VITE_Kinde_Client_Id}
           domain="https://streamzone.kinde.com"
-          redirectUri="https://streamzone-demo.netlify.app"
-          logoutUri="https://streamzone-demo.netlify.app"
+          redirectUri={window.location.origin}
+          logoutUri={window.location.origin}
         >
           <App />
         </KindeProvider>
-        <ThemePanel />
+        {/* <ThemePanel /> */}
       </Theme>
     </Provider>
   </React.StrictMode>,
