@@ -2,12 +2,12 @@ import { Card, Container,Flex } from '@radix-ui/themes'
 import { memo } from 'react'
 import Navlist from './NavList/navlist'
 import Logo from './Logo/logo'
-import Profile from './Proflie/Profile'
-import { useSelector} from 'react-redux'
+// import Profile from './Proflie/Profile'
+// import { useSelector} from 'react-redux'
 
 
 const navbar = memo(() => {
-  const user=useSelector((state:any)=>state.user.value)
+  // const user=useSelector((state:any)=>state.user.value)
   return (
     <Container size="4" align='center'>
       <Card >
@@ -18,7 +18,7 @@ const navbar = memo(() => {
           }} wrap="wrap" mx='4'>
           <Logo />
           <Navlist />
-          {user && <Profile />}
+          {/* {user && <Profile />} */}
         </Flex>
     </Card>
     </Container>

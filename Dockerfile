@@ -1,5 +1,5 @@
 # Use a specific Node.js version
-FROM node:16
+FROM node:latest
 # Installing ffmpeg in the docker container
 RUN apt-get update && apt-get upgrade -y && apt-get install -y ffmpeg
 # Verify node and npm installation
@@ -13,7 +13,7 @@ COPY . .
 # Changing current directory to /home/app/Server
 WORKDIR /home/app/Server/
 # Install dependencies
-RUN npm install && npm run build && npm run dev
+RUN npm run build 
 # Expose the port the app runs on
 EXPOSE 3000
 # Run the application with nodemon
