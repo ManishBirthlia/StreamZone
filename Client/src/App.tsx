@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-    <SpeedInsights />
     <BrowserRouter>
     <Navbar />
+    <SpeedInsights />
       <Routes >
         <Route path='/' element={<Hero />} />
         <Route path='/404' element={<NotFound />} />
