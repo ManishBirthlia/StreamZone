@@ -47,4 +47,5 @@ I have developed a streaming web application designed to broadcast content simul
    - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 or
+ 
 RUN: `docker run -it -p 3000:3000 manishbirthlia/streamzone`
